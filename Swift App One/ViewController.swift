@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+////////////////// P L A Y     A R E A //////////////////
 
     @IBOutlet weak var coolLabel: UILabel!
     
@@ -16,33 +18,25 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
        
+        coolLabel.text = "Answer: \((Double(text1.text!)! + Double(text2.text!)!))"
+        
         print(text1.text!)
+        print(text2.text!)
         
     }
+
+
     
     
-    
-    
-    
-    
+// text boxes
     @IBOutlet weak var text1: UITextField!
     
     @IBOutlet weak var text2: UITextField!
     
     
-    
-    
-    
-    @IBAction func Tapped(_ sender: Any) {
-        self.coolLabel.text = "Buttons are cool!"
-    }
-    
-    
-    
-    
-    
 
     
+//////////////////         S T O P         //////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
